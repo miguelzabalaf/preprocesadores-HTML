@@ -1,0 +1,14 @@
+include /configuraciones.pug
+doctype html
+html
+	head
+		meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+		link(rel="stylesheet", href="css/ejercicio-pug.css")
+	body
+		header
+			h1 Platzi Games
+			if usuario
+				a Hola #{usuario}
+			else
+				a.boton Registro
+        block contenidos
